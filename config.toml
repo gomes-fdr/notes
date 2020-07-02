@@ -1,0 +1,22 @@
+baseURL = "https://gomes-fdr.github.io"
+languageCode = "pt-br"
+title = "Web notes"
+theme = "spectre-pixel"
+
+[params]
+  name = "Fabiano Gomes"
+  bio = "Software Developer"
+  enableRSS = true
+  
+  # Author information in posts
+  aboutAuthor = "I'm a Programmer."
+  
+# Add additional social link entries underneath
+[social]
+	email    = "gomes.fdr@gmail.com"
+	github   = "https://www.github.com/gomes-fdr"
+	linkedin = "https://www.linkedin.com/in/gomes-fdr"
+	telegram  = "https://t.me/gomes_fdr"
+
+[taxonomies]
+  tag = "tags"
