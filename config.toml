@@ -1,22 +1,49 @@
 baseURL = "https://gomes-fdr.github.io"
 languageCode = "pt-br"
-title = "Web notes"
-theme = "spectre-pixel"
+title = "Fabiano Gomes"
+theme = "hello-friend-ng"
+
+[author]
+  name = "Fabiano Gomes"
+
 
 [params]
   name = "Fabiano Gomes"
   bio = "Software Developer"
   enableRSS = true
+  dateform        = "Jan 2, 2006"
   
   # Author information in posts
   aboutAuthor = "I'm a Programmer."
+  homeSubtitle = "Software Developer"
   
-# Add additional social link entries underneath
-[social]
-	email    = "gomes.fdr@gmail.com"
-	github   = "https://www.github.com/gomes-fdr"
-	linkedin = "https://www.linkedin.com/in/gomes-fdr"
-	telegram  = "https://t.me/gomes_fdr"
 
 [taxonomies]
   tag = "tags"
+  
+[params.logo]
+	logoText     = "$ cd /home/"
+	logoHomeLink = "/"
+	
+# Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:gomes.fdr@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://www.github.com/gomes-fdr"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://github.com/"
+
+  [[params.social]]
+    name = "telegram"
+    url  = "https://t.me/gomes_fdr"
+    
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "post/"
