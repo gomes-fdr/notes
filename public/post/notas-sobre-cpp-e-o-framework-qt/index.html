@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Fabiano Gomes ">
+<meta name="description" content="Uso de notação húngara Bastante usada por programadores vindos do Pascal ou Fortram, tenta, através de notação inferir de que tipo ou contexto está tratando.
+/* g_nWheels : member of a global namespace, integer m_nWheels : member of a structure/class, integer m_wheels, _wheels : member of a structure/class s_wheels : static member of a class c_wheels : static member of a function */  Sobre passagem por referência e por valor Algumas referências para entender como funciona o uso de referências ou valores." />
+<meta name="keywords" content=", cpp" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/" />
+
+
+    <title>
+        
+            Notas sobre C&#43;&#43; e o Framework Qt :: Fabiano Gomes 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.d1ea4af8fd04fb24a4f8b882ea54bd04eb245427ca4baf527c81a5dab071410b.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Notas sobre C&#43;&#43; e o Framework Qt">
+<meta itemprop="description" content="Uso de notação húngara Bastante usada por programadores vindos do Pascal ou Fortram, tenta, através de notação inferir de que tipo ou contexto está tratando.
+/* g_nWheels : member of a global namespace, integer m_nWheels : member of a structure/class, integer m_wheels, _wheels : member of a structure/class s_wheels : static member of a class c_wheels : static member of a function */  Sobre passagem por referência e por valor Algumas referências para entender como funciona o uso de referências ou valores.">
+<meta itemprop="datePublished" content="2020-06-05T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-05T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1092">
+
+
+
+<meta itemprop="keywords" content="cpp," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Notas sobre C&#43;&#43; e o Framework Qt"/>
+<meta name="twitter:description" content="Uso de notação húngara Bastante usada por programadores vindos do Pascal ou Fortram, tenta, através de notação inferir de que tipo ou contexto está tratando.
+/* g_nWheels : member of a global namespace, integer m_nWheels : member of a structure/class, integer m_wheels, _wheels : member of a structure/class s_wheels : static member of a class c_wheels : static member of a function */  Sobre passagem por referência e por valor Algumas referências para entender como funciona o uso de referências ou valores."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-06-05 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://gomes-fdr.github.io/about/">About</a></li><li><a href="https://gomes-fdr.github.io/post/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/">Notas sobre C++ e o Framework Qt</a></h2>
+
+            
+
+            <div class="post-content">
+                <h2 id="uso-de-notação-húngara">Uso de notação húngara</h2>
+<p>Bastante usada por programadores vindos do Pascal ou Fortram, tenta, através de notação inferir de que tipo ou contexto está tratando.</p>
+<pre><code>/*
+    g_nWheels : member of a global namespace, integer
+    m_nWheels : member of a structure/class, integer
+    m_wheels, _wheels : member of a structure/class
+    s_wheels : static member of a class
+    c_wheels : static member of a function
+*/
+</code></pre>
+<h2 id="sobre-passagem-por-referência-e-por-valor">Sobre passagem por referência e por valor</h2>
+<p>Algumas referências para entender como funciona o uso de referências ou valores.</p>
+<pre><code>// C++ program to demonstrate differences between pointer and reference. 
+#include &lt;iostream&gt; 
+using namespace std; 
+
+struct demo { 
+    int a;
+}; 
+
+int main() { 
+​	int x = 5; 
+​	int y = 6; 
+​	demo d; 
+​	int *p; 
+​	p = &amp;x; 
+​	p = &amp;y;					// 1. Pointer reintialization allowed 
+​	int &amp;r = x; 
+​	// &amp;r = y;				// 1. Compile Error 
+​	r = y;					// 1. x value becomes 6 
+​	p = NULL; 
+​	// &amp;r = NULL;			 	// 2. Compile Error 
+​	p++;					// 3. Points to next memory location 
+​	r++;					// 3. x values becomes 7 
+
+​	cout &lt;&lt; &amp;p &lt;&lt; &quot; &quot; &lt;&lt; &amp;x &lt;&lt; endl; 	// 4. Different address 
+​	cout &lt;&lt; &amp;r &lt;&lt; &quot; &quot; &lt;&lt; &amp;x &lt;&lt; endl; 	// 4. Same address 
+
+​	demo *q = &amp;d; 
+​	demo &amp;qq = d; 
+​	q-&gt;a = 8; 
+
+​	// q.a = 8;				 // 5. Compile Error 
+​	qq.a = 8; 
+​	// qq-&gt;a = 8;			 	 // 5. Compile Error 
+
+​	cout &lt;&lt; p &lt;&lt; endl;	 		 // 6. Prints the address 
+​	cout &lt;&lt; r &lt;&lt; endl;	 		 // 6. Print the value of x
+​	return 0; 
+} 
+</code></pre>
+<p><a href="https://www.geeksforgeeks.org/passing-by-pointer-vs-passing-by-reference-in-c/">Referência</a></p>
+<h2 id="sobre-o-uso-de-const-values">Sobre o uso de const values</h2>
+<p>Outra figurinha carimbada, o uso de <code>const</code> - aqui algumas aplicações de uso.</p>
+<pre><code>#include &lt;iostream&gt;
+
+// x is a const reference to the argument passed in, not a copy
+void printIt(const int &amp;x) {
+​    std::cout &lt;&lt; x;
+}
+
+int main() {
+​    int a = 1;
+​    printIt(a); 	// non-const l-value
+
+​    const int b = 2;
+​    printIt(b); 	// const l-value
+​    printIt(3); 	// literal r-value
+​    printIt(2+b); 	// expression r-value
+
+​    return 0;
+}
+</code></pre>
+<p><a href="https://www.learncpp.com/cpp-tutorial/6-11a-references-and-const/">Referência</a></p>
+<p><strong>Rule:</strong>  Pass non-pointer, non-fundamental data type variables (such as structs) by (const) reference.</p>
+<h2 id="sobre-auto_ptr">Sobre auto_ptr</h2>
+<p>Essa feature permite o uso de tipo por inferição, ou seja, o tipo da variável é definido do lado direito da igualdade(sinal de atribuição).</p>
+<pre><code>// C++ program to demonstrate working of auto and type inference 
+#include &lt;bits/stdc++.h&gt; 
+
+using namespace std; 
+
+int main() { 
+​	auto x = 4; 
+​	auto y = 3.37; 
+​	auto ptr = &amp;x; 
+
+​	cout &lt;&lt; typeid(x).name() &lt;&lt; endl 
+​	     &lt;&lt; typeid(y).name() &lt;&lt; endl 
+​	     &lt;&lt; typeid(ptr).name() &lt;&lt; endl; 
+
+​	return 0; 
+}
+</code></pre>
+<p><a href="https://www.geeksforgeeks.org/type-inference-in-c-auto-and-decltype/">Referência</a></p>
+<h2 id="uso-de-iteradores">Uso de iteradores</h2>
+<p>Um recurso muito bacana da linguagem, permite subir o nível da conversa quando se fala de <em>navegar</em> em coleções.</p>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+​    std::vector&lt;int&gt; v = {0, 1, 2, 3, 4, 5};
+ 
+​    for (const int&amp; i : v) // access by const reference
+​        std::cout &lt;&lt; i &lt;&lt; ' ';
+​    std::cout &lt;&lt; '\n';
+
+​    for (auto i : v) // access by value, the type of i is int
+​        std::cout &lt;&lt; i &lt;&lt; ' ';
+​    std::cout &lt;&lt; '\n';
+
+​    for (auto&amp;&amp; i : v) // access by forwarding reference, the type of i is int&amp;
+​        std::cout &lt;&lt; i &lt;&lt; ' ';
+​    std::cout &lt;&lt; '\n';
+
+​    const auto&amp; cv = v;
+​    for (auto&amp;&amp; i : cv) // access by f-d reference, the type of i is const int&amp;
+​        std::cout &lt;&lt; i &lt;&lt; ' ';
+​    std::cout &lt;&lt; '\n';
+
+​    for (int n : {0, 1, 2, 3, 4, 5}) // the initializer may be a braced-init-list
+​        std::cout &lt;&lt; n &lt;&lt; ' ';
+​    std::cout &lt;&lt; '\n';
+ 
+​    int a[] = {0, 1, 2, 3, 4, 5};
+​    for (int n : a) // the initializer may be an array
+​        std::cout &lt;&lt; n &lt;&lt; ' ';
+​    std::cout &lt;&lt; '\n';
+
+​    for (int n : a)
+​        std::cout &lt;&lt; 1 &lt;&lt; ' '; // the loop variable need not be used
+​    std::cout &lt;&lt; '\n';
+}
+</code></pre>
+<p><a href="https://en.cppreference.com/w/cpp/language/range-for">Referência</a></p>
+<h2 id="sobre-lambda-functions">Sobre lambda functions</h2>
+<p>Ou funções anônimas, mais um recurso interessante da linguagem</p>
+<pre><code>// C++ program to demonstrate lambda expression in C++ 
+#include &lt;bits/stdc++.h&gt; 
+
+using namespace std; 
+
+int main() { 
+​	vector&lt;int&gt; v1 = {3, 1, 7, 9}; 
+​	vector&lt;int&gt; v2 = {10, 2, 7, 16, 9}; 
+
+​	// access v1 and v2 by reference 
+​	auto pushinto = [&amp;] (int m) {
+​		v1.push_back(m); 
+​		v2.push_back(m); 
+​	}; 
+
+​	// it pushes 20 in both v1 and v2 
+​	pushinto(20); 
+
+​	// access v1 by copy 
+​	[v1]() { 
+​		for (auto p = v1.begin(); p != v1.end(); p++) { 
+​			cout &lt;&lt; *p &lt;&lt; &quot; &quot;;
+​		} 
+​	}; 
+
+​	int N = 5; 
+​	// below snippet find first number greater than N 
+​	// [N] denotes, can access only N by value 
+​	vector&lt;int&gt;:: iterator p = find_if(v1.begin(), v1.end(), [N](int i) { 
+​		return i &gt; N;
+​	}); 
+
+​	cout &lt;&lt; &quot;First number greater than 5 is : &quot; &lt;&lt; *p &lt;&lt; endl; 
+
+​	// function to count numbers greater than or equal to N 
+​	// [=] denotes, can access all variable 
+​	int count_N = count_if(v1.begin(), v1.end(), [=](int a) {
+​		return (a &gt;= N);
+​	}); 
+
+​	cout &lt;&lt; &quot;The number of elements greater than or equal to 5 is : &quot;
+​	     &lt;&lt; count_N &lt;&lt; endl; 
+} 
+</code></pre>
+<p><a href="https://www.geeksforgeeks.org/lambda-expression-in-c/">Referência 1</a>
+<a href="https://docs.microsoft.com/pt-br/cpp/cpp/lambda-expressions-in-cpp?view=vs-2019">Referência 2</a></p>
+<h2 id="sobre-uso-de-excessões">Sobre uso de excessões</h2>
+<pre><code>#include &lt;iostream&gt;
+
+using namespace std;
+
+double division(int a, int b) {
+   if( b == 0 ) {
+​      throw &quot;Division by zero condition!&quot;;
+   }
+
+   return (a/b);
+}
+
+int main () {
+   int x = 50;
+   int y = 0;
+   double z = 0;
+
+   try {
+​      z = division(x, y);
+​      cout &lt;&lt; z &lt;&lt; endl;
+
+   } catch (const char* msg) {
+​     cerr &lt;&lt; msg &lt;&lt; endl;
+   }
+
+   return 0;
+}
+</code></pre>
+<p><a href="https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm">Referência</a></p>
+<h2 id="criando-excessões">Criando excessões</h2>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;exception&gt;
+
+using namespace std;
+
+struct MyException : public exception {
+   const char * what () const throw () {
+​      return &quot;C++ Exception&quot;;
+   }
+};
+
+int main() {
+   try {
+​      throw MyException();
+   } catch(MyException&amp; e) {
+​      std::cout &lt;&lt; &quot;MyException caught&quot; &lt;&lt; std::endl;
+​      std::cout &lt;&lt; e.what() &lt;&lt; std::endl;
+   } catch(std::exception&amp; e) {
+​      //Other errors
+   }
+}
+</code></pre>
+<h2 id="referência-da-linguagem">Referência da linguagem</h2>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/c-plus-plus/">Geeks for geeks</a></li>
+<li><a href="https://en.cppreference.com/w/cpp/language">CPP Reference</a></li>
+<li><a href="https://github.com/rougier/cpp-crash-course">CPP crash course</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hungarian_notation">Notação Hungara</a></li>
+<li><a href="https://doc.qt.io/">Documentação oficial</a></li>
+<li><a href="https://www.cleanqt.io/home">Clean Qt</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://gomes-fdr.github.io/tags/cpp">cpp</a></span>
+  				</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://gomes-fdr.github.io">Fabiano Gomes</a></span>
+            
+            
+            <span> <a href="https://gomes-fdr.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

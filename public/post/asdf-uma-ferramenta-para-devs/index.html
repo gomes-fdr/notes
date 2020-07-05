@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Fabiano Gomes ">
+<meta name="description" content="Quando começamos a desenvolver software, precisamos montar nossa &amp;ldquo;caixa de ferramentas&amp;rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai." />
+<meta name="keywords" content=", wiki" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://gomes-fdr.github.io/post/asdf-uma-ferramenta-para-devs/" />
+
+
+    <title>
+        
+            Ferramentas Para Dev, ASDF :: Fabiano Gomes 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.d1ea4af8fd04fb24a4f8b882ea54bd04eb245427ca4baf527c81a5dab071410b.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Ferramentas Para Dev, ASDF">
+<meta itemprop="description" content="Quando começamos a desenvolver software, precisamos montar nossa &ldquo;caixa de ferramentas&rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai.">
+<meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="447">
+
+
+
+<meta itemprop="keywords" content="wiki," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ferramentas Para Dev, ASDF"/>
+<meta name="twitter:description" content="Quando começamos a desenvolver software, precisamos montar nossa &ldquo;caixa de ferramentas&rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-05-11 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://gomes-fdr.github.io/about/">About</a></li><li><a href="https://gomes-fdr.github.io/post/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://gomes-fdr.github.io/post/asdf-uma-ferramenta-para-devs/">Ferramentas Para Dev, ASDF</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>Quando começamos a desenvolver software, precisamos montar nossa &ldquo;caixa de ferramentas&rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai.
+Felizmente alguém pensou em fazer um gerenciador &ldquo;genérico&rdquo; para ajudar um grande número de desenvolvedores das mais diversas linguagens, esse projeto chama-se <a href="https://asdf-vm.com">ASDF</a> e resolve de uma forma muito elegante o problema de convivência de diferentes interpretadores num mesmo computador, vamos ver como fazer a instalação e configuração dele para alguns interpretadores.</p>
+<h2 id="instalação">Instalação</h2>
+<p>Tudo que estou postando aqui foi retirado do site oficial do <a href="https://asdf-vm.com">ASDF</a> sem dúvida a melhor fonte para funcionalidades mais específicas.</p>
+<pre><code>git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.3
+</code></pre>
+<h2 id="tonar-visível-para-o-seu-shell">Tonar visível para o seu shell</h2>
+<pre><code>echo -e '\n. $HOME/.asdf/asdf.sh' &gt;&gt; ~/.bashrc
+echo -e '\n. $HOME/.asdf/completions/asdf.bash' &gt;&gt; ~/.bashrc
+</code></pre>
+<h2 id="como-o-asdf-funciona">Como o ASDF funciona?</h2>
+<p>Ele não armazena cada versão de interpretador no site do projeto, ao invés disso através de receitas é feita a instalação das diferentes versões dos interpretadores que você precisa - na linguagem do ASDF, estas receitas são chamadas de plugins. Então a primeira coisa a ser feita após a instalação do ASDF é a escolha de quais linguagens vamos trabalhar, neste exemplo vou mostrar como fazer a instalação de diferntes versões de Lua.</p>
+<h2 id="listando-os-plugins-disponíveis">Listando os plugins disponíveis</h2>
+<p>Para saber quais as versões são possíveis de instalar, basta:</p>
+<pre><code>asdf list-all lua
+</code></pre>
+<p>Uma saída semelhante a essa será exibida:</p>
+<pre><code>asdf list-all lua
+5.1
+5.2.0
+5.2.1
+5.2.2
+5.2.3
+5.2.4
+5.3.0
+5.3.1
+5.3.2
+5.3.3
+5.3.4
+5.3.5
+</code></pre>
+<h2 id="instalando-o-plugin">Instalando o plugin</h2>
+<pre><code>asdf plugin-add lua
+</code></pre>
+<h2 id="instalando-uma-versão">Instalando uma versão</h2>
+<pre><code>asdf install lua 5.2.4
+</code></pre>
+<h2 id="tornando-a-versão-instalada-ativa">Tornando a versão instalada ativa</h2>
+<pre><code>asdf global lua 5.2.4
+</code></pre>
+<p>Aqui cabe um observação importante, como foi dito anteriormente o ASDF não mantém uma cópia dos interpretadores compilados em seu site, ele é apenas um repositório de receitas. Logo essa receita vai baixar os fontes dos respectivos projetos e compila-los - para isso é importante que as dependências necessárias para compilar cada interpretador estejam presentes no seu computador. Em cada repositório de plugin temos uma lista do que é necessário e de como fazer a instalação destas dependências.</p>
+<h2 id="um-exemplo-de-instalações">Um exemplo de instalações</h2>
+<pre><code>asdf list
+lua
+  5.2.4
+  5.3.5
+python
+  3.7.4
+asdf current
+   lua            5.3.5    (set by /home/fabiano/.tool-versions)
+   python         3.7.4    (set by /home/fabiano/.tool-versions)
+</code></pre>
+<p>Para outros interpretadores basta repetir o processo, facinho.
+Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://gomes-fdr.github.io/tags/wiki">wiki</a></span>
+  				</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://gomes-fdr.github.io">Fabiano Gomes</a></span>
+            
+            
+            <span> <a href="https://gomes-fdr.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

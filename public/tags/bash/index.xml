@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on Fabiano Gomes</title>
+    <link>https://gomes-fdr.github.io/tags/bash/</link>
+    <description>Recent content in bash on Fabiano Gomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gomes-fdr.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oh my bash!</title>
+      <link>https://gomes-fdr.github.io/post/oh-my-bash/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/oh-my-bash/</guid>
+      <description>Oh my bash é um daqueles projetos que não podem faltar na caixa de ferramentas de qualquer um que use um terminal como base para executar ou mesmo editar código em sistemas baseados em Linux.
+Mas do que se trata isso? Para que serve?
+Bom quando abrimos um terminal, normalmente temos algo do tipo:
+usuario@host:  Não deixa de ser uma informação útil, mas podemos tornar isso muito mais interessante. É ai que entra os serviços do oh-my-bash, vamos lá.</description>
+    </item>
+    
+  </channel>
+</rss>
