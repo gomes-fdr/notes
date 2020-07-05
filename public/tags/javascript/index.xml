@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Fabiano Gomes</title>
+    <link>https://gomes-fdr.github.io/tags/javascript/</link>
+    <description>Recent content in javascript on Fabiano Gomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 22 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gomes-fdr.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Conhecendo deno, a node killer?!</title>
+      <link>https://gomes-fdr.github.io/post/conhecendo-deno-a-node-killer/</link>
+      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/conhecendo-deno-a-node-killer/</guid>
+      <description>Em maio tivemos o lançamento da nova runtime de js, o deno. Vamos brincar um pouco.
+Instalação É muito fácil instalar o deno, o site explica de forma bem simplificada como fazer, mas vamos fazer um pouco diferente, utilizando o ASDF:
+asdf list all deno # Para ver todoas as versões disponíveis asdf install deno 1.0.1 # Instalação da versão mais atual nesta época asdf global deno 1.0.1 # Ativando o uso da versão instalada  Pronto!</description>
+    </item>
+    
+  </channel>
+</rss>

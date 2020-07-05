@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go on Fabiano Gomes</title>
+    <link>https://gomes-fdr.github.io/tags/go/</link>
+    <description>Recent content in go on Fabiano Gomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gomes-fdr.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Switch case em Golang</title>
+      <link>https://gomes-fdr.github.io/post/switch-case-golang/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/switch-case-golang/</guid>
+      <description>O uso desse condicional evita uma sequência de if/else que por vezes podem tornar dificil a leitura do código.
+Nota histórica  Em C o swicth/case aceitava somente statements do tipo int ou char.
+ É partindo disso que quero explorar o quando esse condicional pode ser poderoso em golang, a estrutura básica é a seguinte:
+switch statement; expression { case expression1: //Dosomething case expression2: //Dosomething default: //Dosomething }   statement: The smallest standalone element of an imperative programming language wikipedia - O menor elemento unitário de uma linguagem de programação imperativa(tradução livre).</description>
+    </item>
+    
+    <item>
+      <title>Ponteiros em golang</title>
+      <link>https://gomes-fdr.github.io/post/ponteiros-em-golang/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/ponteiros-em-golang/</guid>
+      <description>Em tradução livre, ponteiros são objetos que armazenam endereços de memória [wikipedia](https://en.wikipedia.org/wiki/Pointer_(computer_programming). Um dos temas que podemos tratar quando passamos a utilizar ponteiros, é a maneira como passamos informações de uma função para outra.
+Por padrão, quando criamos uma função e definimos algum parâmetro, utilizamos a chamada passagem por referência onde este parâmetro, solicita para o computador que ele reserve um pouco de memória para armazenar o conteúdo de cada parâmetro declarado(sim parâmetros são como as variáveis dos nossos programas).</description>
+    </item>
+    
+    <item>
+      <title>Golang, sobre strings</title>
+      <link>https://gomes-fdr.github.io/post/golang-sobre-strings/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/golang-sobre-strings/</guid>
+      <description>Estas são algumas anotações que estou fazendo durante o excelente vídeo curso da Ellen Körbes - o conteúdo e alguns trechos de código são de lá.
+O tipo string Uma das coisas que achei muito legal em Go, tudo é utf-8! O código fonte e o tipo string é em utf-8. Bom só quem já usou IDEs como o qtcreator ou o eclipse sabe os tipos de problemas inesperados que podemos ter pelo simples fato de o encode do código fonte poder estar em diversos formatos(lá se vão todas as mensagens para o usuário final com caracteres alienígenas).</description>
+    </item>
+    
+    <item>
+      <title>Aprendendo golang</title>
+      <link>https://gomes-fdr.github.io/post/aprendendo-golang/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/aprendendo-golang/</guid>
+      <description>Algumas regras que me ajudam a dar um boost no entendimento de novas tecnolgias:
+ Ler a documentação do projeto golang Aprender usando testes TDD Aprender com exemplos Vídeos aulas de qualidade, dica do brother Gusta  Tendo isso como diretiva, vamos começar essa jornada, vamos adionar isso no arquivo bash_profile
+export GOPATH=$HOME/go export PATH=$PATH:$GOPATH/bin  Depois vamos criar os seguintes diretórios:
+mkdir -p $GOPATH/src $GOPATH/pkg $GOPATH/bin  Referências
+Coisas que gostei até aqui  Syntax fácil Instalação de pacotes/depedências Farta documentação, Godoc Geração de binários Formatação de código é builtin Suite de testes é builtin Lembra muito C, na sintaxe Lembra muito C, com structs Não usa ; para finalizar instruções [Short|gopher] operator é muito massa Controle de imports é builtin Controle de uso de variáveis é builtin Fazer build é uma barbada(alguém falou makefile?</description>
+    </item>
+    
+  </channel>
+</rss>

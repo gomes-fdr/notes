@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Fabiano Gomes</title>
+    <link>https://gomes-fdr.github.io/tags/git/</link>
+    <description>Recent content in git on Fabiano Gomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gomes-fdr.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Minhas notas sobre uso do git</title>
+      <link>https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/</guid>
+      <description>Para trazer os submodulos de um projeto:
+git submodule init  Para atualizar os submodulos:
+git submodule update  Para chavear para um branch especifico dos submodulos:
+git submodule foreach &#39;git checkout develop&#39;  Para traze&amp;rsquo; as atualizações de todos os sbmodulos:
+git submodule foreach &#39;git pull&#39;  Para guardar as alterações em uma pilha anonima:
+git stash  Para aplicar as alterações dessa pilha no branch corrente:
+git stash apply  Para guardar inclusive untracked files:</description>
+    </item>
+    
+  </channel>
+</rss>

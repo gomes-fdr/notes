@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>matrix on Fabiano Gomes</title>
+    <link>https://gomes-fdr.github.io/tags/matrix/</link>
+    <description>Recent content in matrix on Fabiano Gomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gomes-fdr.github.io/tags/matrix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Redescobrindo o uso de feeds</title>
+      <link>https://gomes-fdr.github.io/post/redescobrindo-o-uso-de-feeds/</link>
+      <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/redescobrindo-o-uso-de-feeds/</guid>
+      <description>Gosto muito do conteúdo produzido pelo Luke Smith, recentemente ele disponibilizou um vídeo falando sobre o uso de rss para consumir conteúdo. Durante muito tempo usei o saudoso google reader, achava uma maneira muito bacana de consumir conteúdo de sites ou blogs.
+O Luke estendeu isso de forma muito interessante, para consumir qualquer tipo de mídia(texto, vídeo, musica), isso me fez refletir sobre como as plataformas(google, facebook, tweeter, etc) nos forçam para dentro dentro delas.</description>
+    </item>
+    
+  </channel>
+</rss>

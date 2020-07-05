@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Fabiano Gomes ">
+<meta name="description" content="Para trazer os submodulos de um projeto:
+git submodule init  Para atualizar os submodulos:
+git submodule update  Para chavear para um branch especifico dos submodulos:
+git submodule foreach &#39;git checkout develop&#39;  Para traze&amp;rsquo; as atualizações de todos os sbmodulos:
+git submodule foreach &#39;git pull&#39;  Para guardar as alterações em uma pilha anonima:
+git stash  Para aplicar as alterações dessa pilha no branch corrente:
+git stash apply  Para guardar inclusive untracked files:" />
+<meta name="keywords" content=", wiki, git" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/" />
+
+
+    <title>
+        
+            Minhas notas sobre uso do git :: Fabiano Gomes 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.d1ea4af8fd04fb24a4f8b882ea54bd04eb245427ca4baf527c81a5dab071410b.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Minhas notas sobre uso do git">
+<meta itemprop="description" content="Para trazer os submodulos de um projeto:
+git submodule init  Para atualizar os submodulos:
+git submodule update  Para chavear para um branch especifico dos submodulos:
+git submodule foreach &#39;git checkout develop&#39;  Para traze&rsquo; as atualizações de todos os sbmodulos:
+git submodule foreach &#39;git pull&#39;  Para guardar as alterações em uma pilha anonima:
+git stash  Para aplicar as alterações dessa pilha no branch corrente:
+git stash apply  Para guardar inclusive untracked files:">
+<meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="245">
+
+
+
+<meta itemprop="keywords" content="wiki,git," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Minhas notas sobre uso do git"/>
+<meta name="twitter:description" content="Para trazer os submodulos de um projeto:
+git submodule init  Para atualizar os submodulos:
+git submodule update  Para chavear para um branch especifico dos submodulos:
+git submodule foreach &#39;git checkout develop&#39;  Para traze&rsquo; as atualizações de todos os sbmodulos:
+git submodule foreach &#39;git pull&#39;  Para guardar as alterações em uma pilha anonima:
+git stash  Para aplicar as alterações dessa pilha no branch corrente:
+git stash apply  Para guardar inclusive untracked files:"/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-05-11 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://gomes-fdr.github.io/about/">About</a></li><li><a href="https://gomes-fdr.github.io/post/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/">Minhas notas sobre uso do git</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>Para <em>trazer</em> os submodulos de um projeto:</p>
+<pre><code>git submodule init
+</code></pre>
+<p>Para <em>atualizar</em> os submodulos:</p>
+<pre><code>git submodule update
+</code></pre>
+<p>Para <em>chavear</em> para um branch especifico dos submodulos:</p>
+<pre><code>git submodule foreach 'git checkout develop'
+</code></pre>
+<p>Para <em>traze</em>&rsquo; as atualizações de todos os sbmodulos:</p>
+<pre><code>git submodule foreach 'git pull'
+</code></pre>
+<p>Para <em>guardar</em> as alterações em uma pilha <em>anonima</em>:</p>
+<pre><code>git stash
+</code></pre>
+<p>Para aplicar as alterações dessa pilha no branch corrente:</p>
+<pre><code>git stash apply
+</code></pre>
+<p>Para guardar inclusive untracked files:</p>
+<pre><code>git stash -u
+</code></pre>
+<p>Para listar a pilha de <em>stashes</em></p>
+<pre><code>git stash list
+</code></pre>
+<p>Para criar um novo branch a partir de um stash:</p>
+<pre><code>git stash branch novo-branch
+</code></pre>
+<p>Para acessar um stash especifico, acessa através de stash@{n} - por exemplo:</p>
+<pre><code>git stash apply stash@{2} # aplica o stash 2 ao branch corrent
+git stash drop stash@{2} # Apaga o stash 2 da pilha
+</code></pre>
+<p>Apagar a pilha de stash:</p>
+<pre><code>git stash clear
+</code></pre>
+<h2 id="comparar-modificações">Comparar modificações</h2>
+<p>Configurar ferramenta de diff:</p>
+<pre><code>git config --global diff.tool meld
+</code></pre>
+<p>Para comparar dois branches usando a ferramenta gráfica <em>Meld</em>:</p>
+<pre><code>git difftool -d ticket-4581..develop
+</code></pre>
+<p>A lógica é a mesma para fazer um diff entre commits, basta substituir o nome do branch pelo hash do commit(os primeiros 6 digitos são o suficiente).</p>
+<h2 id="juntar-commits">Juntar commits</h2>
+<p>Para <em>juntar</em> varios commits em um só:</p>
+<pre><code>git rebase -i HEAD~&lt;n&gt; # Onde n é a quantidade de commits que desejamos juntar.
+</code></pre>
+<p>Neste comando iterativo podemos juntar, squash ou remover algum commit que não queremos - para isso basta remover a linha pick que contém o commit(leia as instruções do modo iterativo).</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://gomes-fdr.github.io/tags/wiki">wiki</a></span><span class="tag"><a href="https://gomes-fdr.github.io/tags/git">git</a></span>
+  				</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://gomes-fdr.github.io">Fabiano Gomes</a></span>
+            
+            
+            <span> <a href="https://gomes-fdr.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

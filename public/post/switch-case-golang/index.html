@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Fabiano Gomes ">
+<meta name="description" content="O uso desse condicional evita uma sequência de if/else que por vezes podem tornar dificil a leitura do código.
+Nota histórica  Em C o swicth/case aceitava somente statements do tipo int ou char.
+ É partindo disso que quero explorar o quando esse condicional pode ser poderoso em golang, a estrutura básica é a seguinte:
+switch statement; expression { case expression1: //Dosomething case expression2: //Dosomething default: //Dosomething }   statement: The smallest standalone element of an imperative programming language wikipedia - O menor elemento unitário de uma linguagem de programação imperativa(tradução livre)." />
+<meta name="keywords" content=", go" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://gomes-fdr.github.io/post/switch-case-golang/" />
+
+
+    <title>
+        
+            Switch case em Golang :: Fabiano Gomes 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.d1ea4af8fd04fb24a4f8b882ea54bd04eb245427ca4baf527c81a5dab071410b.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Switch case em Golang">
+<meta itemprop="description" content="O uso desse condicional evita uma sequência de if/else que por vezes podem tornar dificil a leitura do código.
+Nota histórica  Em C o swicth/case aceitava somente statements do tipo int ou char.
+ É partindo disso que quero explorar o quando esse condicional pode ser poderoso em golang, a estrutura básica é a seguinte:
+switch statement; expression { case expression1: //Dosomething case expression2: //Dosomething default: //Dosomething }   statement: The smallest standalone element of an imperative programming language wikipedia - O menor elemento unitário de uma linguagem de programação imperativa(tradução livre).">
+<meta itemprop="datePublished" content="2020-07-04T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-07-04T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="373">
+
+
+
+<meta itemprop="keywords" content="go," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Switch case em Golang"/>
+<meta name="twitter:description" content="O uso desse condicional evita uma sequência de if/else que por vezes podem tornar dificil a leitura do código.
+Nota histórica  Em C o swicth/case aceitava somente statements do tipo int ou char.
+ É partindo disso que quero explorar o quando esse condicional pode ser poderoso em golang, a estrutura básica é a seguinte:
+switch statement; expression { case expression1: //Dosomething case expression2: //Dosomething default: //Dosomething }   statement: The smallest standalone element of an imperative programming language wikipedia - O menor elemento unitário de uma linguagem de programação imperativa(tradução livre)."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-07-04 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://gomes-fdr.github.io/about/">About</a></li><li><a href="https://gomes-fdr.github.io/post/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://gomes-fdr.github.io/post/switch-case-golang/">Switch case em Golang</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>O uso desse condicional evita uma sequência de <code>if/else</code> que por vezes podem tornar dificil a leitura do código.</p>
+<h2 id="nota-histórica">Nota histórica</h2>
+<blockquote>
+<p>Em <code>C</code> o <code>swicth/case</code> aceitava somente statements do tipo <code>int</code> ou <code>char</code>.</p>
+</blockquote>
+<p>É partindo disso que quero explorar o quando esse condicional pode ser poderoso em golang, a estrutura básica é a seguinte:</p>
+<pre><code>switch statement; expression {
+case expression1:
+     //Dosomething
+case expression2:
+     //Dosomething
+default:
+     //Dosomething
+}
+</code></pre>
+<blockquote>
+<p>statement:  The smallest standalone element of an imperative programming language <a href="https://en.wikipedia.org/wiki/Statement_(computer_science)">wikipedia</a> - O menor elemento unitário de uma linguagem de programação imperativa(tradução livre).</p>
+</blockquote>
+<blockquote>
+<p>expression: An instruction to execute something that will return a value <a href="https://en.wikipedia.org/wiki/Expression_(computer_science)">wikipedia</a> - Uma instrução que executa algo e retorna um valor(tradução livre).</p>
+</blockquote>
+<h2 id="pontos-importantes">Pontos importantes</h2>
+<p>Note que pode haver uma combinação de possibilidades aqui, no caso, quatro.</p>
+<ul>
+<li>Ambos, <em>statement</em> e <em>expression</em> presente.</li>
+<li>Apenas <em>statement</em> presente.</li>
+<li>Apenas <em>expression</em> presente.</li>
+<li>Nenhum dos dois presentes(wtf!?).</li>
+</ul>
+<p>A ordem de execução e comparação é:</p>
+<ul>
+<li>De cima para baixo.</li>
+<li>Da esquerda para direita.</li>
+</ul>
+<p>Se usamos <em>statement</em> é obrigatório o uso do &lsquo;;&rsquo;.</p>
+<p><del>Diferente do <code>C</code> o uso do <code>break</code> não é necessário, embora torne a leitura mais legível(na minha modesta opinião).</del></p>
+<p>Como no <code>C</code> o <code>default</code> é opcional.</p>
+<p>Expressões são separados por vírgula.</p>
+<p>Dois <em>case blocks</em> não podem ter uma constante de mesmo valor(erro de compilação).</p>
+<h2 id="a-instrução-fallthrough">A instrução <em>fallthrough</em></h2>
+<p>Mais uma novidade, essa instrução deve ser usada dentro <em>case blocks</em>, ela tranfere o controle para o próximo <em>case block</em>, mesmo que o valor do bloco corrente tenha &lsquo;casado&rsquo; com a expressão a ser avaliada.</p>
+<pre><code>i := 45
+switch {
+case i &lt; 10:
+  fmt.Println(&quot;i is less than 10&quot;)
+  fallthrough
+case i &lt; 50:
+  fmt.Println(&quot;i is less than 50&quot;)
+  fallthrough
+case i &lt; 100:
+  fmt.Println(&quot;i is less than 100&quot;)
+}
+
+$ i is less than 50
+$ i is less than 100
+</code></pre>
+<p><em>Fallthrough</em> precisa estar nos <em>statements</em> finais do <em>switch</em>, se não o compilador <strong>grita!</strong>.</p>
+<h2 id="descobrindo-o-tipo-do-dado">Descobrindo o &lsquo;tipo&rsquo; do dado</h2>
+<p>Essa é uma instrução válida e muito usada:</p>
+<pre><code>var t interface{} = 10
+
+switch t.(type) {
+case string:
+  fmt.Println(&quot;Type: string&quot;)
+case int:
+  fmt.Println(&quot;Type: int&quot;)
+default:
+  fmt.Printf(&quot;Unknown Type %T&quot;, t)
+}
+
+$ Type: int
+</code></pre>
+<p>Estas foram minha anotações sobre <code>switch/case</code> em golang, esta é a um tradução livre e adaptada do artigo de mesmo tema do excelente site <a href="https://golangbyexample.com/switch-statement-golang/">Go by Example</a>.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://gomes-fdr.github.io/tags/go">go</a></span>
+  				</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+                <span><a href="https://gomes-fdr.github.io">Fabiano Gomes</a></span>
+            
+            
+            <span> <a href="https://gomes-fdr.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

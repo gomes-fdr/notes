@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Fabiano Gomes</title>
+    <link>https://gomes-fdr.github.io/tags/docker/</link>
+    <description>Recent content in docker on Fabiano Gomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Mon, 11 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gomes-fdr.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dicas para uso do docker</title>
+      <link>https://gomes-fdr.github.io/post/dicas-para-uso-do-docker/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/dicas-para-uso-do-docker/</guid>
+      <description>Referencias utilizadas: link
+Instalar um container - docker hub
+docker pull postgres:alpine  Listar containers instalados
+docker images -a  Remover um container
+docker rmi &amp;lt;nome-do-container&amp;gt;  Iniciar um container
+docker run --name postgres-0 -e POSTGRES_PASSWORD=1234 -d -p 5432:5432 postgres:alpine  Processo docker rodando
+docker ps  Para subir uma imagem existente
+docker start postgres-0 # &amp;lt;container-name&amp;gt;  Parar o container
+ docker stop postgres-0 # &amp;lt;container-name&amp;gt;  Para entrar no container</description>
+    </item>
+    
+  </channel>
+</rss>

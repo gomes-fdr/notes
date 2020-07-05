@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpp on Fabiano Gomes</title>
+    <link>https://gomes-fdr.github.io/tags/cpp/</link>
+    <description>Recent content in cpp on Fabiano Gomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 05 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gomes-fdr.github.io/tags/cpp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Notas sobre C&#43;&#43; e o Framework Qt</title>
+      <link>https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/</link>
+      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/</guid>
+      <description>Uso de notação húngara Bastante usada por programadores vindos do Pascal ou Fortram, tenta, através de notação inferir de que tipo ou contexto está tratando.
+/* g_nWheels : member of a global namespace, integer m_nWheels : member of a structure/class, integer m_wheels, _wheels : member of a structure/class s_wheels : static member of a class c_wheels : static member of a function */  Sobre passagem por referência e por valor Algumas referências para entender como funciona o uso de referências ou valores.</description>
+    </item>
+    
+  </channel>
+</rss>
