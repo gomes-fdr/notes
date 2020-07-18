@@ -2,7 +2,7 @@
 title: "Um Projeto Para Estudo De Tecnologias"
 date: 2020-07-18T18:33:50-03:00
 slug: "um-projeto-para-estudo-de-tecnologias"
-draft: true
+draft: false
 ---
 
 A ideia inicial de fazer esse blog, foi para guardar meus projetos e aprendizados para uma analise futura. É muito bom poder olhar para tras e fazer avaliações e balanços.
@@ -13,7 +13,7 @@ Tenho estudado diversas tecnologias e escolhi algumas delas para subir um projet
 
 Vamos começar do começo, quais 'entidades' compõem essa versão de draft?
 
-![ER do draft](/images/er-track-all.png)
+![ER do draft](images/er-track-all.png)
 
 ## O frontend
 
