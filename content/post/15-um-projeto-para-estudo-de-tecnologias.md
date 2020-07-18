@@ -13,7 +13,7 @@ Tenho estudado diversas tecnologias e escolhi algumas delas para subir um projet
 
 Vamos começar do começo, quais 'entidades' compõem essa versão de draft?
 
-![ER do draft](images/er-track-all.png)
+![ER do draft](/images/er-track-all.png)
 
 ## O frontend
 
