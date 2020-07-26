@@ -1,8 +1,8 @@
 ---
 title: "4 dicas Para Aprender Golang"
 date: 2020-07-11T16:18:52-03:00
-slug: "4 dicas Para Aprender Golang"
-draft: true
+slug: "4-dicas-para-aprender-golang"
+draft: false
 ---
 
 ## Chegando na Golândia: A jornada de um desenvolvedor sênior.
