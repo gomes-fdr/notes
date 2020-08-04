@@ -24,6 +24,18 @@ Depois de instalar e ter um PC usável, tudo muito semelhante ao descrito no pos
 * Docker
 * Git
 * Oh my bash
-* Nvim: Sim resolvi começar a usar, aprece bom.
+* Nvim: Sim resolvi começar a usar, parece bom.
+
+## Nvim primeiras impressões
+
+Já tentei usar o VIM como meu editor regular, falhei miseravelmente. Tenho acompanhado o crescente uso do NeoVim resolvi tentar, coisas que gostei de cara:
+
+* Localiza e utiliza a área de cópia do SO.
+* Instalação de temas funciona sem maiores ginásticas.
+* Corretor ortográfico funcionou sem maiores ginásticas.
+* Com pouquissímas customizações se torna bem usável.
+* Estou usando o vim-plug.
+* Usando o tabnine para auto-completar.
+
 
 Vida longa ao Debian! Sempre me espera de braços abertos.
