@@ -8,3 +8,6 @@
 	path = public
 	url = https://github.com/gomes-fdr/gomes-fdr.github.io
 	branch = master
+[submodule "themes/hugo-vitae"]
+	path = themes/hugo-vitae
+	url = https://github.com/dataCobra/hugo-vitae
