@@ -8,7 +8,7 @@ tags: ["project", "web"]
 
 >O presente e o futuro das interfaces de interação com o usuário estão na web.
 
-Está é uma afirmação minha mas, acredito que poucos teriam coragem de refuta-la. 
+Está é uma afirmação minha mas, acredito que poucos teriam coragem de refuta-la.
 
 Dito isso, podemos bater na porta das UIs na web e de suas inúmeras possibilidades.
 
@@ -30,8 +30,8 @@ Eis a estrutura de projeto que o [webpack](https://webpack.js.org/) sugere:
 
     .
     ├── dist
-    │   ├── index.html
-    │   └── main.js
+    │ ├── index.html
+    │ └── main.js
     ├── package.json
     ├── package-lock.json
     └── src
