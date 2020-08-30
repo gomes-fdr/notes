@@ -61,6 +61,18 @@ Precisamos criar um arquivo de configuração do typescript, `tsconfig.json`:
         }
     }
 
+Nosso código em TS, `index.ts`:
+
+    import * as _ from 'lodash';
+
+    function component() {
+        const element = document.createElement('div');
+        element.innerHTML = _.join(['Hello2', 'webpack'], ' ');
+        return element;
+    }
+
+document.body.appendChild(component());
+
 Alterar o arquivo `index.html`
 
     <!DOCTYPE html>
