@@ -79,7 +79,22 @@ E por fim, compilar nosso arquivo ts para js
 
     npx webpack
 
-Pronto, agora podemos codar em typescript sem complicações.
+Pronto, agora podemos codar em typescript sem complicações. O projeto está com essa estrutura até o momento:
+
+    .
+    ├── dist
+    │   ├── bundle.js
+    │   ├── index.html
+    │   └── main.js
+    ├── package.json
+    ├── package-lock.json
+    ├── src
+    │   ├── index.js
+    │   └── index.ts
+    ├── tsconfig.json
+    └── webpack.config.js
+
+Próximo passo é adicionar o vuejs, até lá.
 
 
 
