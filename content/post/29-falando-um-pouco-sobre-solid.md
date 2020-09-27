@@ -2,7 +2,7 @@
 title: "Falando um pouco sobre SOLID"
 date: 2020-09-26T15:36:15-03:00
 slug: "falando-um-pouco-sobre-SOLID"
-tags: ["solid", "opp"]
+tags: ["solid", "oop"]
 draft: false
 ---
 Semana passada fui convidado para falar um pouco sobre o que eu sabia sobre S.O.L.I.D. e eu lembrei que que tinha lido um livro a respeito em 2016, lembrava pouco sobre o que tinha lido e percebi que estava na hora de revisitar esse conteúdo.
@@ -46,7 +46,7 @@ Essa promessa, ou contrato, obriga quem deseja fazer parte da *turminha* de *sha
 
 Onde:
 
-  * O quebra-cabeça completo é o nosso sistema;
+  * O quebra-cabeça completo é o ~~nosso sistema~~ problema que estamos resolvendo;
   * Cada peça do quebra-cabeça é uma classe e tem um domínio próprio;
   * O contorno das nossas peças são as interfaces.
   
@@ -58,11 +58,11 @@ O projeto de uma classe e a definição do seu comportamento acaba tendo dois as
 
 >Se **q(x)** é uma propriedade demonstrável dos objetos **x** de tipo **T**. Então **q(y)** deve ser verdadeiro para objetos **y** de tipo **S** onde **S** é um subtipo de **T**.
 
-Diretamente relacionado com o princípio de open-closed, isso é uma das coisas bacanas do SOLID, essa interligação entre os princípios. Onde um acaba influenciando ou reforçando ou outro, fazendo uma leitura prática no que tange orientação a objetos, podemos dizer que:
+Diretamente relacionado com o princípio de open-closed, isso é uma das coisas bacanas do SOLID, essa interligação entre os princípios. Onde um acaba influenciando ou reforçando o outro, fazendo uma leitura prática no que tange orientação a objetos, podemos dizer que:
 
 > As classes derivadas devem ser substituíveis por suas classes bases.
 
-Na comunidade Python se usa muito a seguinte frase(chaga a ser uma parada canônica):
+Na comunidade Python se usa muito a seguinte frase(chega a ser uma parada canônica):
 
 > Se caminha como um pato, grasna como um pato, então deve ser um pato!
 
