@@ -25,3 +25,8 @@ English - Good read and listen comprehension.
   * Médio: Técnico em Eletrônica Industrial - Escola Parobé, Porto Alegre, RS, Brasil
   * Médio: Técnico em Mecânica Industrial - Escola Parobé, Porto Alegre, RS, Brasil
 
+### Currículo
+
+* [Português](/pdf/Fabiano_da_Rosa_Gomes-currículo.pdf)
+* [English](/pdf/Fabiano_da_RosaGomes_Resume.pdf)
+
