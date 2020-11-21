@@ -3,7 +3,7 @@ title: "What I Winned With the Quarantine"
 slug: "what-i-winned-with-the-quarantine"
 date: 2020-11-01T18:57:49-03:00
 draft: false
-tags: ["life-style"]
+tags: ["lifestyle"]
 ---
 > Today when I wrote this post, here in Brazil we pass the 159,000 deaths of corona virus victims. In no way I try to say that it be a good thing, ever!
 
