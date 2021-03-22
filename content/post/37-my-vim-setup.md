@@ -3,7 +3,7 @@ title: "My Vim Setup"
 slug: "my-vim-setup"
 date: 2021-03-22T15:56:42-03:00
 draft: false
-tags: ["neovim"]
+tags: ["neovim", "tools"]
 ---
 
 So, I decided to try VIM again! Yes this is another time to try VIM, and why do I try again? Because I want, because it is fun and it is very cool.
