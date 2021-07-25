@@ -7,37 +7,36 @@ author: "Fabiano da Rosa Gomes"
 
 ## Pausados
 
-| Titulo                              | Autor                | Situação |
-| ----------------------------------- | -------------------- | -------- |
-| Python Fluente                      | Luciano Ramalho      | pausado  |
-| Learning JavaScript Design Patterns | Addy Osmani          | pausado  |
-| Javascript patterns                 | Stoyan Stefanov      | pausado  |
-| Trabalhe quatro horas por semana    | Timothy Ferriss      | pausado  |
-| Red Mars                            | Kim Stanley Robinson | pausado  |
-| Musashi volume 1                    | Eiji Yoshikawa       | pausado  |
+| Titulo                           | Autor                | Situação |
+| -------------------------------- | -------------------- | -------- |
+| Python Fluente                   | Luciano Ramalho      | pausado  |
+| Trabalhe quatro horas por semana | Timothy Ferriss      | pausado  |
+| Red Mars                         | Kim Stanley Robinson | pausado  |
+| Musashi volume 1                 | Eiji Yoshikawa       | pausado  |
 
 ## Comprei e não lí (ainda)
 
-| Titulo                                                          | Autor               | Situação |
-| --------------------------------------------------------------- | ------------------- | -------- |
-| Walden- O homem da casa do lago                                 | H.D. Thoreau        | futuro   |
-| A desobediência civil                                           | H.D. Thoreau        | futuro   |
-| Sociedade do cansaço                                            | Byung-Chul Han      | futuro   |
-| GoT pt-br livro 1                                               | George R. R. Martin | futuro   |
-| GoT en-us book 1                                                | George R. R. Martin | futuro   |
-| Guia a do mochileiro das galáxias                               | Douglas Adams       | futuro   |
-| Lugar nenhum                                                    | Neil Gaiman         | futuro   |
-| Fahrenheit 451                                                  | Ray Bradbury        | futuro   |
-| Admirável mundo novo                                            | Aldous Huxley       | futuro   |
-| Memórias do subsolo                                             | Fiodor Dostoievski  | futuro   |
-| Desconstruindo a Web: As tecnologias por trás de uma requisição | Willian Molinari    | futuro   |
+| Titulo                            | Autor               | Situação |
+| --------------------------------- | ------------------- | -------- |
+| Walden- O homem da casa do lago   | H.D. Thoreau        | futuro   |
+| A desobediência civil             | H.D. Thoreau        | futuro   |
+| Sociedade do cansaço              | Byung-Chul Han      | futuro   |
+| GoT pt-br livro 1                 | George R. R. Martin | futuro   |
+| GoT en-us book 1                  | George R. R. Martin | futuro   |
+| Guia a do mochileiro das galáxias | Douglas Adams       | futuro   |
+| Lugar nenhum                      | Neil Gaiman         | futuro   |
+| Fahrenheit 451                    | Ray Bradbury        | futuro   |
+| Admirável mundo novo              | Aldous Huxley       | futuro   |
+| Memórias do subsolo               | Fiodor Dostoievski  | futuro   |
 
 ## 2021
 
-| Titulo                                   | Autor         | Situação |
-| ---------------------------------------- | ------------- | -------- |
-| Duna Livro 1                             | Frank Herbert | atual    |
-| Santo Guerreiro. Roma Invicta (Volume 1) | Eduardo Spohr | atual    |
+| Titulo                                                          | Autor            | Situação |
+| --------------------------------------------------------------- | ---------------- | -------- |
+| Duna Livro 1                                                    | Frank Herbert    | atual    |
+| Só Pode Ser Brincadeira, Sr. Feynman!                           | Richard Feynman  | atual    |
+| Santo Guerreiro. Roma Invicta (Volume 1)                        | Eduardo Spohr    | completo |
+| Desconstruindo a Web: As tecnologias por trás de uma requisição | Willian Molinari | completo |
 
 ## 2020
 
@@ -66,13 +65,11 @@ author: "Fabiano da Rosa Gomes"
 
 ## 2017
 
-| Titulo                              | Autor                | Situação |
-| ----------------------------------- | -------------------- | -------- |
-| Eloquent javascript                 | Marijn Haverbeke     | completo |
-| Learning JavaScript Design Patterns | Addy Osmani          | pausado  |
-| Javascript patterns                 | Stoyan Stefanov      | pausado  |
-| Construindo APIs REST com nodejs    | Caio Ribeiro Pereira | completo |
-| Trabalhe quatro horas por semana    | Timothy Ferriss      | pausado  |
+| Titulo                           | Autor                | Situação |
+| -------------------------------- | -------------------- | -------- |
+| Eloquent javascript              | Marijn Haverbeke     | completo |
+| Construindo APIs REST com nodejs | Caio Ribeiro Pereira | completo |
+| Trabalhe quatro horas por semana | Timothy Ferriss      | pausado  |
 
 ## 2016
 
@@ -82,7 +79,6 @@ author: "Fabiano da Rosa Gomes"
 | Javascript de cabo a rabo                | Cleuton Sampaio                  | completo |
 | A batalha do apocalipse                  | Eduardo Spohr                    | completo |
 | O Andar do Bêbado                        | Leonard Mlodinow                 | completo |
-| Red Mars                                 | Kim Stanley Robinson             | pausado  |
 | Aprendendo Qt com o projeto octopi       | Alexandre Arnt                   | completo |
 | Orientação a Objetos e SOLID para Ninjas | Maurício Aniche                  | completo |
 | Pai Rico Pai pobre                       | Robert Kiyosaki & Sharon Lechter | completo |
@@ -97,6 +93,5 @@ author: "Fabiano da Rosa Gomes"
 | O físico                        | Noah Gordon        | completo |
 | O xamã                          | Noah Gordon        | completo |
 | A revolução dos bichos          | George Orwell      | completo |
-| Musashi volume 1                | Eiji Yoshikawa     | pausado  |
 | O apanhador no campo de centeio | J.D. Salinger      | completo |
 | O homem que calculava           | Malba Tahan        | completo |
